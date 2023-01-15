@@ -15,11 +15,7 @@ public class Lorry extends Car {
     @Override
     public String toString() {
         return
-                "model:'" + model + '\n' +
-                        "vehicleClass:" + vehicleClass + '\n' +
-                        "characteristics:" + '\n' +
-                        "  weight:" + weight + '\n' +
-                        "  engine:" + engine + '\n' +
+                super.toString() + '\n' +
                         "  loadingAmount:" + loadingAmount + '\n' +
                         "driver:" + driver + '\n';
     }

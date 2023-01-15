@@ -11,7 +11,6 @@ public class Engine {
 
     @Override
     public String toString() {
-        return
-                vendor + "-" + power;
+        return vendor + "-" + power;
     }
 }

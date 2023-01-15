@@ -11,8 +11,7 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return
-                "age=" + age +
-                        ", name='" + name;
+        return "age=" + age +
+                ", name='" + name;
     }
 }
