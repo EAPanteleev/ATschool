@@ -1,8 +1,12 @@
 package homework.lesson19;
 
 public class Cat extends Animal {
-    public Cat(String name, String food, int foodCounter, String location, int counter, HealthState health) {
-        super(name, food, foodCounter, location, counter, health);
+
+    protected static int counter;
+
+    public Cat(String name, String food, int foodCounter, String location,HealthState health) {
+        super(name, food, foodCounter, location, health);
+        counter++;
     }
 
     @Override

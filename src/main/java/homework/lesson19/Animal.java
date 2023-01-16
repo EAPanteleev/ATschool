@@ -5,7 +5,6 @@ public abstract class Animal {
     protected String food;
     protected int foodCounter;
     protected String location;
-    protected static int counter;
     protected HealthState health;
 
     abstract void makeSound();
@@ -21,12 +20,11 @@ public abstract class Animal {
         System.out.println(name + " Спит");
     }
 
-    public Animal(String name, String food, int foodCounter, String location, int counter, HealthState health) {
+    public Animal(String name, String food, int foodCounter, String location, HealthState health) {
         this.name = name;
         this.food = food;
         this.foodCounter = foodCounter;
         this.location = location;
-        Animal.counter++;
         this.health = health;
     }
 
@@ -34,7 +32,6 @@ public abstract class Animal {
     public String toString() {
         return name + '\n' +
                 "location=" + location + '\n' +
-                "health=" + health + '\n' +
-                "counter=" + counter + '\n';
+                "health=" + health + '\n';
     }
 }

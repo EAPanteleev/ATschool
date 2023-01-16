@@ -2,8 +2,11 @@ package homework.lesson19;
 
 public class Dog extends Animal {
 
-    public Dog(String name, String food, int foodCounter, String location, int counter, HealthState health) {
-        super(name, food, foodCounter, location, counter, health);
+    protected static int counter;
+
+    public Dog(String name, String food, int foodCounter, String location, HealthState health) {
+        super(name, food, foodCounter, location,  health);
+        counter++;
     }
 
     @Override

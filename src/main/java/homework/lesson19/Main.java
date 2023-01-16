@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Animal dog = new Dog("Шарик", "мясо", 2, "Дом", 2, HealthState.HEALTH);
-        Animal cat = new Cat("Барсик", "молоко", 2, "Дом", 1, HealthState.UNHEALTHY);
-        Animal horse = new Horse("Шрек", "сено", 2, "Конюшня", 20, HealthState.HEALTH);
+        Animal dog = new Dog("Шарик", "мясо", 2, "Дом",  HealthState.HEALTH);
+        Animal cat = new Cat("Барсик", "молоко", 2, "Дом",  HealthState.UNHEALTHY);
+        Animal horse = new Horse("Шрек", "сено", 2, "Конюшня",  HealthState.HEALTH);
 
         ArrayList<Animal> list = new ArrayList<>();
         list.add(dog);
