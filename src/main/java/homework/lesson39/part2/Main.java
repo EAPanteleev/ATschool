@@ -9,7 +9,7 @@ public class Main {
         double z = 4.5;
 
         System.out.println(Summa.sum(a, b));
-        System.out.println((int) Summa.sum(a, b, a));
+        System.out.println(Summa.sum(a, b, a));
         System.out.println(Summa.sum(x, y, z));
         System.out.println(Summa.sum(x, y));
         System.out.println(Summa.sum(a, x, y));
