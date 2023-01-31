@@ -15,12 +15,7 @@ public class Task4 {
     }
 
     public static void incomeMoney(int p, double r, int t) {
-        double tempP = p;
-        double percents;
-        for (int i = 0; i < t; i++) {
-            percents = tempP * r / 100;
-            tempP += percents;
-        }
-        System.out.println(tempP);
+
+        System.out.println(p * Math.exp(r / 100 * t));
     }
 }
