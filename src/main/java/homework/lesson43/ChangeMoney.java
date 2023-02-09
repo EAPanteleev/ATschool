@@ -15,7 +15,7 @@ public class ChangeMoney {
         if (Arrays.stream(money).anyMatch(x -> x < 0)) {
             System.out.println("Ошибка в входных данных");
             return;
-        } else if (a + b / 100 >= c + d / 100) {
+        } else if (a + b / 100 > c + d / 100) {
             System.out.println("Не хватает денег");
             return;
         }
