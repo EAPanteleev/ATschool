@@ -7,10 +7,10 @@ public class Task4 {
 
         int n = Integer.parseInt(args[0]);
         int result;
-        do {
-            result = nextInt(n);
-        } while (!isPrime(result));
-        System.out.println(result);
+            do {
+                result = nextInt(n);
+            } while (!isPrime(result) || result == 0);
+            System.out.println(result);
     }
 
     public static boolean isPrime(int x) {
