@@ -1,7 +1,7 @@
 package homework.lesson54;
 
 public class Task5 {
-    final static String regex = "\\d+";
+    final static String regex = "[-]?\\d+";
 
     public static boolean isInteger(String str) {
         return str.matches(regex);

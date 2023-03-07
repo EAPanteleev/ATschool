@@ -10,8 +10,9 @@ public class Task2 {
              }
             for (String a :
                     args) {
-                if (a.matches("^[a-zA-Z0-9]")) {
-                    System.out.println("Можно вводить только Латинские буквы");
+                if (!a.matches("^[a-zA-Z0-9]+$")) {
+                    System.out.println("\n" +"Можно вводить только Латинские буквы");
+                    System.exit(1);
                 } else {
                     if (a.length() == wordWithMaxLength.length()) {
                         System.out.print(a + " ");
